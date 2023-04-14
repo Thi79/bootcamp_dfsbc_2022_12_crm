@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1533892743580-890e5b193113?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-position: center;
+}
+
+#titulo{
+    font-size: 26px;
+    padding: 2%;
+    font-weight: bold;
+}
+
+p span{
+    color: #7904ff;
+}
+
+.area-login{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    padding: 30px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #170d2080;
+    width: 330px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    width: 100%;
+}
+
+
+.login input{
+    color: white;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 7px;
+    border: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    outline: none;
+
+}
+
+input::placeholder{
+    font-size: 15px;
+    padding-left: 20px;
+    color: white;
+}
+
+.login p{
+    color: white;
+    font-size: 15px;
+}
+.login a{
+    color: rgb(245, 196, 196);
+    text-decoration: none;
+    font-weight: bold;
+}
+.login a:hover{
+    color: white;
+    font-weight: bold;
+    background-color: #7904ff;    
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#imagem-top{
+    margin-top: 10px;
+    margin-bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: auto;
+}
+
+#botao{
+    cursor: pointer;
+    border: 3px solid hwb(0 100% 0%);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 9px;
+    background: transparent;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+#botao:hover{
+    background-color: #ffffff70;
+}
+.fa-eye{
+    position: absolute;
+    cursor: pointer;    
+    margin-left: 310px;
+    margin-top: 72px;
+    width: 40px;
+}
+
+#msgError{   
+    margin-top: 1em;
+    font-size: 1em;
+    text-align: center;
+    color: #f1d5d5;
+    background-color: #ff0404c4;
+    /* background: transparent 40%; */
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+  @media screen and (max-width: 768px){
+    .login{
+        width: 280px;
+        height: 420px;
+        box-sizing: border-box;
+    }
+    .fa-eye{
+        margin-left: 208px;
+    }
+    body{
+        background-position: center;
+    }
+}
+.fa-icon{
+    color: white;
+}
