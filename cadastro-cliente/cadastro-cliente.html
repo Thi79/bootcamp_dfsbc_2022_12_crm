@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <!--bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/graficos.js"></script>
+   
+  </head>
+
+  <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light barra-superior">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">IMOBILI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+  <div class="container-fluid">
+    
+    <div class="row "> 
+      
+      <div class="col-1 barra-lateral">
+        <br>
+
+        <div style="width: 100%;text-align: center;">
+          <a href="../Dashboard/dashboard.html">
+            <i class="fa-solid fa-house-user" style="font-size: 3.5vw;color: rgb(71, 71, 71);"></i>
+            <p style="font-size: 1vw;color: rgb(71, 71, 71);">Home</p>
+          </a>
+        </div>
+        <br>
+        <div style="width: 100%;text-align: center;padding-right: 1px;">
+          <i class="fa-solid fa-chart-simple" style="font-size: 3.5vw;color: rgb(71, 71, 71);"></i>
+          <p style="font-size: 1vw;color: rgb(71, 71, 71);">Painel de Controle</p>
+          <a href="#"></a>
+        </div>  
+        <br>
+        <div style="width: 100%;text-align: center;padding-right: 1px;">
+          <a href="../cadastro-cliente/cadastro-cliente.html">
+            <i class="fa-sharp fa-solid fa-address-card" style="font-size: 3.5vw;color: rgb(71, 71, 71);"></i>
+            <p style="font-size: 1vw;color: rgb(71, 71, 71);">Cadastrar Cliente</p>
+          </a>
+        </div>  
+      </div>
+          
+    <div class="col-10 container-fluid area-principal">
+      <h3>Cadastro de cliente</h3>
+      <form>
+        <div class="row border-register">
+          <div class="form-group col-md-4">
+            <label for="inputName">Nome</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Nome">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputLastName">Sobrenome</label>
+            <input type="text" class="form-control" id="inputLastName" placeholder="Sobrenome">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputCpf">CPF</label>
+            <input type="text" class="form-control" id="inputCpf" placeholder="000.000.000-00">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputRg">RG</label>
+            <input type="text" class="form-control" id="inputRg" placeholder="RG">
+          </div>
+        </div>
+        <div class="row border-register">
+          <div class="form-group col-md-2">
+            <label for="inputCEP">CEP</label>
+            <input type="text" class="form-control" id="inputCEP">
+          </div>
+          <div class="form-group col-md-8">
+            <label for="inputAddress">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputCity">Estado</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+  </div>
+    <!--</div>--> <!-- AREA PRINCIPAL-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

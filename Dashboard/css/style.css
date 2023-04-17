@@ -12,6 +12,14 @@ body{
     padding-top: 60px;
        
 }
+a{
+    text-decoration: none;
+}
+
+a .barra-lateral{
+    cursor: pointer;
+    text-decoration: none;
+}
 
 .barra-superior{
     background-color: #ebebeb;
