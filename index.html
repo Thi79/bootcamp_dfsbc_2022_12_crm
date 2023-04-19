@@ -10,7 +10,8 @@
 <body>
     <section class="area-login">
         <div class="login">
-            <p id="titulo">IMO<span>BILI</span></p>
+            <!-- <p id="titulo">IMO<span>BILI</span></p> -->
+            <img src="../bootcamp_dfsbc_2022_12_crm/assets/logoim1.ico" alt="logo imobili" id="logotipo">
             <div>
                 <img src="tela-login/password.png" alt="" id="imagem-top">
             </div>
@@ -24,26 +25,9 @@
                 <i id="olhar" class="fa-eye" aria-hidden="true"><img src="tela-login/olhos.png" alt="ver senha" width="18px" height="18px"></i> 
             </form>
             <button id="botao" type="submit" value="Entrar" onclick="entrar()" >Entrar</a></button>
-            <p>Ainda não usa nosso CRM? <a href="#">Entre em contato</a></p>
             <p>Ainda não usa nosso CRM? <a href="Dashboard/dashboard.html">Conheça!</a></p>
         </div>
     </section>  
+    <script src="../bootcamp_dfsbc_2022_12_crm/api/api-password.js"></script>
 </body>
-<script>
-    let btn = document.querySelector('#olhar')
-    let inputSenha = document.querySelector('#senha')
-
-btn.addEventListener('click',()=>{    
-    if(inputSenha.getAttribute('type')=='password'){
-        inputSenha.setAttribute('type','text')
-    }
-    else{
-        inputSenha.setAttribute('type','password')
-    }
-})
-
-function entrar(){
-    window.open("./Dashboard/dashboard.html", "_blank")
-}
-</script>
 </html>
