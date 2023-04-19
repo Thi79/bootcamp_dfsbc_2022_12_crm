@@ -105,39 +105,55 @@
           </div>
           <div class="form-group col-md-4">
             <label for="inputCpf">CPF</label>
-            <input type="text" class="form-control" id="inputCpf" placeholder="000.000.000-00">
+            <input type="text"  class="form-control" id="cpf" placeholder="000.000.000-00" maxlength="14" required>
           </div>
           <div class="form-group col-md-4">
             <label for="inputRg">RG</label>
             <input type="text" class="form-control" id="inputRg" placeholder="RG">
           </div>
+        </div><div class="row border-register">
+          <div class="form-group col-md-8">
+            <label for="telefone">Celular</label>
+            <input type="text" class="form-control" id="telefone" maxlength="15" required>
+          </div>
+          <div class="form-group col-md-8">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email">
+          </div>
         </div>
         <div class="row border-register">
           <div class="form-group col-md-2">
             <label for="inputCEP">CEP</label>
-            <input type="text" class="form-control" id="inputCEP">
+            <input type="text" class="form-control" id="cep">
           </div>
-          <div class="form-group col-md-8">
+          <div class="form-group col-md-6">
             <label for="inputAddress">Endereço</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+            <input type="text" class="form-control" id="logradouro" placeholder="Rua dos Bobos, nº 0">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputAddress">Nº</label>
+            <input type="text" class="form-control" id="#" placeholder="">
           </div>
           <div class="form-group col-md-6">
             <label for="inputCity">Cidade</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="localidade">
           </div>
           <div class="form-group col-md-4">
             <label for="inputCity">Estado</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="uf">
           </div>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        
       </form>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
     </div>
   </div>
   </div>
     <!--</div>--> <!-- AREA PRINCIPAL-->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../api/api-adress.js"></script>
+    <script src="../api/api-formCpfTelefone"></script>
   </body>
 </html>

@@ -1,0 +1,24 @@
+document.getElementById('cpf').addEventListener('input', function() {
+    this.value = this.value.replace(/\D/g, ''); // remove todos os caracteres não numéricos
+    this.value = this.value.replace(/(\d{3})(\d{1,3})?(\d{1,3})?/, function(match, p1, p2, p3) {
+      var cpf = [p1, p2 || '', p3 || ''].join('.').replace(/\.+$/g, '');
+      return cpf ? cpf + '-' : '';
+    }); // formata como CPF em tempo real
+  });
+  
+
+  function formatarTelefone(telefone) {
+    telefone = telefone.replace(/\D/g, ''); // remove todos os caracteres não numéricos
+    telefone = telefone.replace(/^(\d{2})(\d)/g, '($1) $2'); // adiciona o parêntese em volta dos dois primeiros dígitos
+    telefone = telefone.replace(/(\d{5})(\d)/, '$1-$2'); // adiciona o traço depois do quinto dígito
+    telefone = telefone.replace(/(\d{4})(\d)/, '$1$2'); // remove o último traço (se houver)
+    return telefone;
+  }
+  
+  document.getElementById('telefone').addEventListener('input', function() {
+    var telefone = document.getElementById('telefone').value;
+    document.getElementById('telefone').value = formatarTelefone(telefone);
+  });
+  
+
+  

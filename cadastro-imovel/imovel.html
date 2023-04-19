@@ -96,8 +96,8 @@
       <form>
         <div class="row border-register">
           <div class="form-group col-md-4">
-            <label for="inputName">Endereço</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Endereço">
+            <label for="logradouro">Endereço</label>
+            <input type="text" class="form-control" id="logradouro" placeholder="Endereço">
           </div>
           <div class="form-group col-md-6">
             <label for="inputLastName">Matricula do imóvel</label>
@@ -112,26 +112,28 @@
         <div class="row border-register">
           <div class="form-group col-md-2">
             <label for="inputCEP">CEP</label>
-            <input type="text" class="form-control" id="inputCEP">
+            <input type="text" class="form-control" id="cep">
           </div>
           
           <div class="form-group col-md-6">
             <label for="inputCity">Cidade</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="localidade">
           </div>
           <div class="form-group col-md-4">
             <label for="inputCity">Estado</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="uf">
           </div>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
       </form>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
     </div>
   </div>
   </div>
     <!--</div>--> <!-- AREA PRINCIPAL-->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../api/api-adress.js"></script>
+    <script src="../api/api-formCpfTelefone"></script>
   </body>
 </html>
