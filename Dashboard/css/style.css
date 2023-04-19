@@ -49,6 +49,9 @@ a .barra-lateral{
     #logotipo-barralateral{
         display: none;
     }
+    .area-principal{
+        margin-top: 20%;
+    }
     
 
   }
