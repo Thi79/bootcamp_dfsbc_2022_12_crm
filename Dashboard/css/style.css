@@ -7,13 +7,14 @@ body{
 form{
     font-size: 12px;
 }
-
 .barra-lateral{
-    background-color: rgb(0, 0, 0);
-    width: 5%;
+    width: 7%;
     height: 100vh;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(175, 175, 175);    
+    padding-top: 35px;
+    position: fixed;
 }
-
 a{
     text-decoration: none;
 }
@@ -25,15 +26,13 @@ a .barra-lateral{
 
 #logotipo-barralateral{
     width: 97%;
+
 }
 
 .area-principal{
-    margin-top: 0.1%;
-    padding-left: 6%;
-
+    width: 80%;
+    margin-top: 3%;
 }
-
-
 @media screen and (max-width: 700px) {
     .container-fluid {
       flex-direction:row;
@@ -47,11 +46,14 @@ a .barra-lateral{
         flex-direction: row;
         height: auto;
     }
-
     #logotipo-barralateral{
         display: none;
     }
+    .area-principal{
+        margin-top: 20%;
+    }
     
+
   }
 
 .fa-arrow-down{
