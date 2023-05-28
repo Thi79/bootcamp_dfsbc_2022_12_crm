@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./frontend/tela-login/style.css">
+  <title>Login</title>
+</head>
+<body>
+    <section class="area-login">
+        <div class="login">
+            <!-- <p id="titulo">IMO<span>BILI</span></p> -->
+            <img src="./frontend/assets/logoim1.ico" alt="logo imobili" id="logotipo">
+            <div>
+                <img src="./frontend/tela-login/password.png" alt="" id="imagem-top">
+            </div>
+            <form>
+                <div id='msgError'></div>
+
+                <label for="usuario" id="labelUsuario"></label>
+                <input type="text" name="usuario" placeholder="Usuário" autofocus id="usuario">
+                <label for="senha" id="labelSenha"></label>
+                <input type="password" name="senha" placeholder="Senha" id="senha" required>
+                <i id="olhar" class="fa-eye" aria-hidden="true"><img src="./frontend/assets/olhos.png" alt="ver senha" width="18px" height="18px"></i> 
+            </form>
+            <button id="botao" type="submit" value="Entrar" onclick="entrar()">Entrar<a href="./frontend/dashboard/dashboard.html"></a></button>
+            <p>Ainda não usa nosso CRM? <a href="./frontend/dashboard/dashboard.html">Conheça!</a></p>
+        </div>
+    </section>  
+    <script src="./frontend/api/api-password.js"></script>
+</body>
+</html>
