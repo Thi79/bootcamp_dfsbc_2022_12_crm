@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="../api-frontend/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../api-frontend/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="../api-frontend/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <!--bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="../cadastros/style.css"> 
+  </head>
+  <body> 
+    <div class="barra-lateral fixed-top p-1 pt-3">
+      <div style="width: 100%;text-align: center; ">
+        <img src="../assets/logoim1.ico" alt="logo imobili" id="logotipo-barralateral">
+      </div>
+      <br>
+      <div style="width: 100%;text-align: center; ">
+        <a href="../dashboard/dashboard.html">
+          <i class="fa-solid fa-house-user" style="font-size: min(3em, 3vw);color: #fff"></i>
+          <p style="font-size: min(0.9em, 0.9vw);color: #fff">Home</p>
+        </a>
+      </div>
+      <br>
+      <div style="width: 100%;text-align: center;">
+        <i class="fa-solid fa-chart-simple" style="font-size: min(3em, 3vw);color: #fff"></i>
+        <p style="font-size: min(0.9em, 0.9vw);color: #fff">Painel de Controle</p>
+        <a href="#"></a>
+      </div>  
+      <br>
+      <div style="width: 100%;text-align: center;">
+        <a href="../cadastros/cadastro-cliente.html">
+          <i class="fa-sharp fa-solid fa-address-card" style="font-size: min(3em, 3vw);color: #fff"></i>
+          <p style="font-size: min(0.9em, 0.9vw);color: #fff">Cadastrar Cliente</p>
+        </a>
+      </div> 
+      <br> 
+      <div style="width: 100%;text-align: center;">
+        <a href="../cadastros/cadastro-imovel.html">
+          <i class="fa-sharp fa-solid fa-house" style="font-size: min(3em, 3vw);color: #fff"></i>
+          <p style="font-size: min(0.9em, 0.9vw);color:#fff">Cadastrar Imóvel</p>
+        </a>
+      </div>
+      <br>
+      <div style="width: 100%;text-align: center;">
+        <a href="../cadastros/cadastro-imovel.html">
+          <i class="fa-sharp fa-solid fa-handshake" style="font-size: min(3em, 3vw);color: #fff"></i>
+          <p style="font-size: min(0.9em, 0.9vw);color:#fff">Cadastrar Proposta</p>
+        </a>
+      </div>
+      <br>
+    </div>           
+    <div class="col-10 container-fluid area-principal">
+      <h3>Cadastro de imóvel</h3>
+      <form>
+        <div class="row border-register">
+          <div class="form-group col-md-4">
+            <label for="logradouro">Endereço</label>
+            <input type="text" class="form-control" id="logradouro" placeholder="Endereço">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputLastName">Matricula do imóvel</label>
+            <input type="text" class="form-control" id="matriculaImovel" placeholder="Matricula do imóvel">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputCpf">Tipo de imóvel</label>
+            <input type="text" class="form-control" id="tipoImovel" placeholder="Tipo de imóvel">
+          </div>
+          
+        </div>
+        <div class="row border-register">
+          <div class="form-group col-md-2">
+            <label for="inputCEP">CEP</label>
+            <input type="text" class="form-control" id="cep">
+          </div>
+          
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control" id="localidade">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputCity">Estado</label>
+            <input type="text" class="form-control" id="uf">
+          </div>
+        </div>
+        <br>
+      </form>
+      <button onclick="cadastrar()" type="button" class="btn btn-primary">Cadastrar</button>
+    </div>
+    <!--</div>--> <!-- AREA PRINCIPAL-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../api-frontend/api-adress.js"></script>
+    <script src="../api-frontend/api-formCpfTelefone"></script>
+    <script src="../cadastros/cadastro-imovel.js"></script>
+  </body>
+</html>
